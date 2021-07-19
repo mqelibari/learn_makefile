@@ -20,3 +20,10 @@ clean:
 	rm -f *.o
 
 #In this case clean has no prerequistes and will be alles reamde new by every call as a goal.
+
+#With -f you can specify a makefile name that make searches for.
+
+#With "-n" you can print the recipe of a target.
+
+#Overriding a recipt: If you have a rule in a second file then make will take this rule otherwise from the frist file. 
+
