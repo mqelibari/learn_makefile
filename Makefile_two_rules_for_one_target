@@ -1,0 +1,15 @@
+one_function: one_function.o
+	gcc -o one_function one_function.o
+
+one_function: one_function.o
+	gcc -o other_function other_function.o
+
+#make will chosse the second one as the recipt to create the target. And it will print a error message.
+
+.one_function: third_function.o
+	gcc -o third_function third_function
+
+.one_function: fourth_function.o
+	gcc -o fourth_function fourth_function
+
+#gcc will choose the second one in this case, but dont print a error message.
