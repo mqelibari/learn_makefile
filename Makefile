@@ -10,4 +10,13 @@ word
 if a included Makefile doent exist, then make will search in the folders specified with "-I" or ""--include-dir"., if there is no file it will look at,\
 some filder that make has hard coded.\
 
+#if you know that a file might not exits you can ust the "-inlcude" directive.
 
+#sinclude is a synonym fpr include
+
+#The enviroment varibale MAKEFILES expects a list of folders, where make seachrches for a makefile if there is no Makefile in the directory make is called.
+
+clean:
+	rm -f *.o
+
+#In this case clean has no prerequistes and will be alles reamde new by every call as a goal.
