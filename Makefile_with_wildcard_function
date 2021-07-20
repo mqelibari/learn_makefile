@@ -1,0 +1,3 @@
+objects = $(wildcard *.o)
+
+#the varibale objects now contains all objects files found in the directory
