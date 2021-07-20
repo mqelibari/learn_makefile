@@ -1,0 +1,5 @@
+one_target.o two_target.o: one_header.h
+
+
+#in this case all targets depend on one_header.h
+# with multiple targets you can connect all targets with one or two or more prerequsites
