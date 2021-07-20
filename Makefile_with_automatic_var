@@ -1,0 +1,10 @@
+foo.o: foo.c
+	gcc -c $^ -o $@
+
+
+
+# the automatic Varibale $^ will set the name of the file to directory it is found + filename
+
+# the autmatic Variable $@ holds the name of the target
+
+# the automatic Varibale $< holds the name of the prerequisite
