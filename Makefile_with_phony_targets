@@ -1,0 +1,8 @@
+.PHONY: one_target
+
+
+one_target:
+	gcc -c one_file.c
+
+# one_target's recipt will be executed regardless if there is a file name one_t\arget
+

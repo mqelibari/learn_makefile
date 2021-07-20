@@ -1,5 +1,7 @@
-var := one$\
-word
+var := one \
+       word
+
+.POSIX:
 # line above connects via $\ one word in severeal lines.
 
 #include filenames...
@@ -16,6 +18,9 @@ some filder that make has hard coded.\
 
 #The enviroment varibale MAKEFILES expects a list of folders, where make seachrches for a makefile if there is no Makefile in the directory make is called.
 
+print:
+	echo $(var)
+
 clean:
 	rm -f *.o
 
@@ -26,4 +31,12 @@ clean:
 #With "-n" you can print the recipe of a target.
 
 #Overriding a recipt: If you have a rule in a second file then make will take this rule otherwise from the frist file. 
+
+#How make reads a Makefile\
+First it reads all the makefiles and variables values, targets, rules (explicit imlicit). In the second step it inizalizes the data for the targets,\
+to see if some need to be updatet.
+
+#It is posiible to enable a second expansion Phase, in this Phase between the other to Phases, varibales will be expanded, that are escaped in the first Phasel.
+
+#If there are multiple rules for one target, make will select the last one and if the target doesnt begin with a "." it will also print a error message.
 
