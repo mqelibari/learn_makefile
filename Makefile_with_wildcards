@@ -1,0 +1,6 @@
+foo: *.o
+	gcc -o foo *.o
+
+#In this case foos prerequisites are all object files in the directory
+
+
