@@ -1,8 +1,9 @@
 VPATH = src: ../my_headers
 
 
-one_target.o: one_header
+one_target.o: one_header.h
 	gcc -c one_target.c one_target.h
 
 #If one_header is not in the same directory as one_target.c\
-make will look for it in the source that is given in the VPATH source.
+make will look for it in the source that is given in the VPATH source.\
+And the prereuqistes will be written in this form src/one_header.h
