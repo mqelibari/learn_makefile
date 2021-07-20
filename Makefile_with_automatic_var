@@ -8,3 +8,5 @@ foo.o: foo.c
 # the autmatic Variable $@ holds the name of the target
 
 # the automatic Varibale $< holds the name of the prerequisite
+
+# the automatic Varibale $? prints only those files that have changed
