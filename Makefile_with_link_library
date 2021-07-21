@@ -1,0 +1,4 @@
+target: -lonelib
+	gcc target $^ -o $o
+
+#Make will make a directory search for the library one_lib and will replace the varibale with the direcotry it is found + filname
