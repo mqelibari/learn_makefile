@@ -3,10 +3,10 @@ foo.o: foo.c
 
 
 
-# the automatic Varibale $^ will set the name of the file to directory it is found + filename
+# the automatic Varibale $^ will replace the varibale to directory the file is found + filename
 
-# the autmatic Variable $@ holds the name of the target
+# the autmatic Variable $@ replaces the varibale to the name of the target
 
-# the automatic Varibale $< holds the name of the prerequisite
+# the automatic Varibale $< is replaced by the name of the first prerequisite
 
-# the automatic Varibale $? prints only those files that have changed
+# the automatic Varibale $? is replaced by only those files that have changed
