@@ -2,5 +2,5 @@ print: one_prereuqistes.c
 	touch print
 
 #this target only updates the target and if one prerequisites is newer than the target it will\
-be done agian.
+be done agian. This is only to see when a last update was be done.
 
