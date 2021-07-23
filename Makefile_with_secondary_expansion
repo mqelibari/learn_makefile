@@ -9,3 +9,5 @@ one_target: $(first) $$(second)
 #the second expansion makes the second Prerequsites to a varibale.
 #In the first expansion the first varibale will get its value and after the second expansion it will remains at this value. THe second variable will get its,\
 value after the second expansion.
+
+#This might be important for the automatic variables. If you want to get a recipt with the value and not the automatic varibale, then you can use second expansion.
