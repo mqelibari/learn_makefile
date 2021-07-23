@@ -1,8 +1,8 @@
 one_var := 10
 
-second = one_var
+second = $(one_var)
 
-third := one_var
+third := $(one_var)
 
 compile:
 	echo $(one_var)
