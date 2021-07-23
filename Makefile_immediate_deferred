@@ -1,0 +1,20 @@
+one_var := 10
+
+second = one_var
+
+third := one_var
+
+compile:
+	echo $(one_var)
+	echo $(second)
+	echo $(third)
+
+one_var := 20
+
+
+compile2:
+	echo $(one_var)
+	echo $(second)
+	echo $(third)
+
+#In the first case All have the same value. In the second case one_var and second have different values as third var.
