@@ -1,0 +1,9 @@
+clean: force
+	rm *.o
+
+force:
+	
+
+#In this case clean has a empty target as prerequisite.
+#So it will be done every time the target clean will be called.
+#.PHONY is a substitute for force (we can use every name instead of force) but not every make version will support .PHONY
