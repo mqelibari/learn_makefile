@@ -2,7 +2,7 @@
 
 
 one_target:
-	gcc -c one_file.c
+	rm *.o
 
 # one_target's recipt will be executed regardless if there is a file name one_t\arget
-
+# Usually the rules of PHONY targets dont create a file. PHONY targets are more a name for a recipt.
