@@ -1,0 +1,6 @@
+main:	main.o
+	gcc -o main main.o
+
+
+#This Makefile will generate automatically the Target "main.o" as needed for "main", by adding a new Target with the same name Prerequiste "main.c"
+#Its a implicit rule. But it will not add extra headers to the targets prerequisites.
