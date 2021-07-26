@@ -1,0 +1,5 @@
+main: main.o
+	gcc -o main main.o
+
+#This is a example for a implicit rule. Make will find namebased the prerequisties of main.o, which is needed in this case for main. Namebased means, that make compares the name and if it finds,
+# the "main.c" file it will use it to generate the "main.o" file. 
