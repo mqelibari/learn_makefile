@@ -1,0 +1,5 @@
+%_target: %_lib.h
+	gcc -c $@.c
+	gcc -o $@ $@.o
+
+#this will makefile will create all targets, which have a "_target" in its name and all files with the pattern "_lib.h" will be prerequistes of this files.
