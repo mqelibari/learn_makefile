@@ -1,0 +1,6 @@
+#target_one target_two &: prerequisite_one prerequistie_two
+#	rule for target_one
+#	rule for target_two
+
+#Grouped Targets will be made of one invocation of the recipe.
+#We can use this for if we want the object file and the Assambler Code of one file.
