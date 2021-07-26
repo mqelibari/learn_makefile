@@ -1,0 +1,12 @@
+one_target:: typ_a
+	recipt
+
+one_target:: typ_b
+	recipt
+
+one_target:: typ_a typ_b typ_c
+	recipt
+
+#in this case the three targets are independet of each other. They will be only executed if a prerequisites is older than the target.
+# If prerequistes typ_b is edited, the second target and the third target will be updated. With this we can make different versions of a target with only one command.
+# Maybe to compare the older version with the newer version of a program.
