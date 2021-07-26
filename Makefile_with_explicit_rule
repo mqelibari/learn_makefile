@@ -1,0 +1,4 @@
+one_target: one_prerequisites
+	gcc -c one_prerequisites
+
+#This is a example for a explicit rule. A explicit rule consits of a target (not required) its prerequistes and its recipt how to update the target.
