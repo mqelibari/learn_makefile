@@ -1,0 +1,5 @@
+one_target: one_prerequistes
+	@gcc -c one_prerequiste
+
+#In this case the recpit will not be printed on the command line.
+#If we use the -n flag for make it will it will be printed.
