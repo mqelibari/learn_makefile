@@ -1,0 +1,5 @@
+one_target:	one_prerequisite.c
+	cd ../folder && gcc -c one_prerequisite.c
+
+
+#In this case make will change the directory to the Path given. If this fails make will abort the execution. If not it will compile the one_prerequiste.c file.
