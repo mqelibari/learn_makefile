@@ -1,5 +1,13 @@
-one_target: one_prerequistes
-	@gcc -c one_prerequiste
+one_target: one_prerequistes.c
+	@gcc -c one_prerequiste.c
 
 #In this case the recpit will not be printed on the command line.
 #If we use the -n flag for make it will it will be printed.
+
+
+.SHELLFLAGS: -s #or (--silent)
+one_target: one_prerequiste.c
+	gcc -c one_prerequisite.c
+
+#This also will supress the shell from echoing the recipt.
+#We can use Shellflags.
