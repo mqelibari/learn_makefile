@@ -1,0 +1,7 @@
+#If we want to run a command and ignore its errors we can write a "-" infront of a command.
+
+#example:
+	-rm *.o
+
+#this target will pass its recipt to the command line and if the command returns a non zero value. make will continue to execute its recipts.
+#if the "-" is missing make will abort.
