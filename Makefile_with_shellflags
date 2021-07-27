@@ -1,0 +1,5 @@
+.SHELLFLAGS: -n
+target_default:
+	echo "Hello"
+
+#This will only print the recipt without actually executing it.
