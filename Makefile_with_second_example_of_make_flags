@@ -1,0 +1,4 @@
+target:
+	echo "This will be directly printed, without showing the recipt"
+
+#Using the -s or --silent flag for make the recipt will be executed without printing the recipt
