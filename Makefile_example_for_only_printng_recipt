@@ -1,0 +1,4 @@
+one_target:
+	echo "This will not be executed, only printing"
+
+#Invoke make with -n flag or --just-print flag. Make will only print the recipt without acutally executing it.
