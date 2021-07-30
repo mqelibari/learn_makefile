@@ -1,0 +1,19 @@
+foo = $(bar)
+bar = $(ugh)
+ugh = What?
+bar = No
+
+onet:
+	echo $(foo)
+#with the recursiv expand varibales, onet will echo No?
+
+
+three := hello
+one := $(three) 22
+three := ciao
+
+twot:
+	echo $(one)
+#In this case with the simple expand varibale twot will be "hello 22" and so echoed.
+
+
