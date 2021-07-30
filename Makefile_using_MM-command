@@ -1,0 +1,27 @@
+one_var := $(shell gcc -MM fib_fast.c)
+space :=
+space +=   
+all: one_t two_t three_t
+
+.SILENT:
+one_t:
+	echo $(one_var)
+	echo $(filter %.o:, $(one_var))
+	echo $(filter-out %.o:, $(one_var))
+
+
+
+target_with_double_colon = $(filter %.o:, $(one_var))
+pre = $(filter-out %.o:, $(one_var))
+two_t:
+	echo PREREQUISTES = $(pre)
+	echo TARGETS = $(target_with_double_colon)
+
+
+$(subst, :, $(space), $(target_with_double_colon))
+
+three_t:
+	echo Target = $(target_with_double_colon)
+
+#$(target_with_double_colon): $(pre)
+#	gcc -c $^
