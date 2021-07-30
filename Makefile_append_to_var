@@ -1,0 +1,9 @@
+one_var := hello
+
+one_var += world
+
+onet:
+	echo $(one_var)
+
+
+# "+=" will one string to another string saved in a var, so that one_var's value is now hello world
