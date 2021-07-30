@@ -1,0 +1,5 @@
+one_var := hello
+one_var ?= bye
+
+#in this case one_var has the value hello, because zhe ?= operator only sets the value if the varibale is not already defined.
+
