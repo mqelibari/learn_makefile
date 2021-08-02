@@ -1,0 +1,6 @@
+.RECIPEPREFIX = _
+
+one_t:
+_echo hello
+
+# The new Recipeprefix is now the underscore "_"
