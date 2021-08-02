@@ -1,0 +1,13 @@
+ONE_VAR := hello
+
+all: one_t two_t
+
+one_t: ONE_VAR = bye
+
+two_t:
+	echo $(ONE_VAR)
+
+one_t:
+	echo $(ONE_VAR)
+
+#define a varibale in a local scope of a target. The globald varibale will not overwritten
