@@ -1,0 +1,16 @@
+var_one = hello
+
+var_two := $(var_one)
+
+var_two += you
+
+
+var_three = $(var_one)
+
+var_three += she
+var_one  = bye
+
+.SILENT:
+echoing:
+	echo $(var_two)
+	echo $(var_three)
