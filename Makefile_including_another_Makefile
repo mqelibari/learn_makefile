@@ -1,0 +1,4 @@
+include second_makefile.mk
+
+first_t_first_makefile:
+	echo Hello Im coming from the second Makefile
