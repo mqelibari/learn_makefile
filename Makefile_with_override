@@ -1,0 +1,8 @@
+one_var = hello
+override sec_var = house
+
+.SILENT:
+one_t:
+	echo $(one_var)
+	echo $(sec_var)
+#one_var will be overwritten by the command argument but the sec_var will remain at his acutall value when its defined in the Makfile                        
